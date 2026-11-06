@@ -170,7 +170,8 @@
         tg.ready();
 
         // ⚠️ آدرس سایت دلخواه
-        const REDIRECT_URL = "https://google.com";
+        const urlParams = new URLSearchParams(window.location.search);
+const REDIRECT_URL = urlParams.get('redirect') || "https:///fra.xhamster.com › best › weekly";
 
         function showStep(n) {
             document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
